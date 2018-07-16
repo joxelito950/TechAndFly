@@ -5,8 +5,8 @@ server:
 
 spring:
   datasource:
-    url: jdbc:mysql://localhost/todo
-    username: root
-    password: techandsolve
+    url: jdbc:mysql://192.168.1.14/cantera
+    username: cantera
+    password: cantera
     driver-class-name: com.mysql.jdbc.Driver
 
