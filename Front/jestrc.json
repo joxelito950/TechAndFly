@@ -1,0 +1,19 @@
+{
+  "collectCoverageFrom": ["src/**/*.{js}"],
+  "coverageThreshold": {
+    "global": {
+      "statements": 98,
+      "branches": 91,
+      "functions": 98,
+      "lines": 98
+    }
+  },
+  "verbose": true,  
+  "transform": {
+    "^.+\\.(js|jsx)$": "./node_modules/babel-jest",
+    "^.+\\.less$": "./config/jest/cssTransform.js",
+    "\\.js$": "./config/jest/fileTransform.js",
+    "\\.(jpg|jpeg|png|svg)$": "./config/jest/fileMock.js"
+  },
+  "transformIgnorePatterns": ["[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"]
+}

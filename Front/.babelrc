@@ -1,0 +1,27 @@
+{
+  "presets": ["es2015", "react",  "stage-0"],
+  "plugins": [
+    "transform-class-properties",
+    "transform-decorators-legacy",
+    "transform-object-rest-spread"
+  ],
+  "env": {
+    "production": {
+      "presets": ["react"],
+      "plugins": [
+        "transform-class-properties",
+        "transform-decorators-legacy",
+        "transform-object-rest-spread"
+      ]
+    },
+    "development": {
+      "presets": ["react"],
+      "plugins": [
+        "react-hot-loader/babel",
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        "transform-object-rest-spread"
+      ]
+    }
+  }
+}
